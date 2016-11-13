@@ -66,6 +66,24 @@ public class Book {
         return  strForoutput;
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        if(obj == this){return  true;}
+        if((obj instanceof Book)==false){return false;}
+        Book book = (Book) obj;
+        return (this.name == ((Book) obj).name) && (this.authors ==((Book) obj).authors)
+                &&(this.price == ((Book) obj).price) && (this.gty == ((Book) obj).gty);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = 17;
+        result = result * 31 + name.hashCode();
+        result = result * 31 + authors.hashCode();
+        result = result * 31 + (int)price;
+        result = result * 31 + gty;
+        return result;
+    }
 
     private String name;
     private Author[] authors;
