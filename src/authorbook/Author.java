@@ -1,4 +1,4 @@
-package overrideEqlHashCode;
+package authorbook;
 /**
  * Created by Daria Serebryakova on 12.10.2016.
  */

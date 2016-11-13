@@ -1,4 +1,4 @@
-package overrideEqlHashCode;
+package authorbook;
 
 /**
  * Created by Daria Serebryakova on 08.11.2016.
@@ -36,6 +36,10 @@ public class Runner {
         String s2 = new String("Hello");
         System.out.println(s1==s2);
         System.out.println(s1.equals(s2));
+        String s3 = s1;
+        System.out.println(s1==s3);
+        System.out.println(s1.equals(s3));
+
 
 
 

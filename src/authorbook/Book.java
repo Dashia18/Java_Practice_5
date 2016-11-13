@@ -1,4 +1,4 @@
-package overrideEqlHashCode;
+package authorbook;
 import java.util.Arrays;
 
 /**
@@ -71,8 +71,8 @@ public class Book {
         if(obj == this){return  true;}
         if((obj instanceof Book)==false){return false;}
         Book book = (Book) obj;
-        return (this.name == ((Book) obj).name) && (this.authors ==((Book) obj).authors)
-                &&(this.price == ((Book) obj).price) && (this.gty == ((Book) obj).gty);
+        return (this.name == book.name) && (this.authors ==book.authors)
+                &&(this.price == book.price) && (this.gty == book.gty);
     }
 
     @Override
