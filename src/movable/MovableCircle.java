@@ -18,16 +18,29 @@ public class MovableCircle implements Movable{
                 ", center=" + center +
                 '}';
     }
-    public void moveUp(){
+
+    @Override
+    public void moveUp() {
+
         center.y -= center.ySpeed;
-    };
-    public  void moveDown(){
+    }
+
+
+
+    @Override
+    public void moveDown() {
+
         center.y += center.ySpeed;
     }
-    public void moveLeft(){
+
+    @Override
+    public void moveLeft() {
+
         center.x -= center.xSpeed;
     }
-    public  void moveRight(){
+
+    @Override
+    public void moveRight() {
         center.x += center.xSpeed;
     }
     //data

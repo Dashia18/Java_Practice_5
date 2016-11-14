@@ -18,21 +18,24 @@ public class MovableRectangle implements Movable {
                 '}';
     }
 
-
+    @Override
     public void moveUp(){
 
         topLeft.y -= topLeft.ySpeed;
         bottomRirht.y -= bottomRirht.ySpeed;
     }
+    @Override
     public  void moveDown(){
 
         topLeft.y += topLeft.ySpeed;
         bottomRirht.y += bottomRirht.ySpeed;
     }
+    @Override
     public void moveLeft(){
         topLeft.x -= topLeft.xSpeed;
         bottomRirht.x -= bottomRirht.xSpeed;
     }
+    @Override
     public  void moveRight(){
         topLeft.x += topLeft.xSpeed;
         bottomRirht.x += bottomRirht.xSpeed;
